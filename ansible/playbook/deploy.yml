@@ -1,0 +1,8 @@
+---
+- hosts: all  
+  tasks:
+   - name: crear file
+     file:
+      path: "pr2"
+      state:  directory
+     become: yes
