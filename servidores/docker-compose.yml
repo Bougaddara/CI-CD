@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  servidor3:
+    image: s3
+    container_name: s3
+    ports:
+      - 8083:8080
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - USUARIO=mohamed
+      - PASSWD=Mohamed1.*
+    networks:
+        netbase:
+            ipv4_address: 172.130.7.16
+networks:
+  netbase:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.130.7.0/24

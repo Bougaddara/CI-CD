@@ -1,0 +1,8 @@
+---
+- hosts: all  
+  tasks:
+   - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
+     file:
+      path: "proyecto/pr1"
+      state:  directory
+     become: yes
