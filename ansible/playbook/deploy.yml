@@ -1,6 +1,6 @@
 ---
 - hosts: all
   tasks:
-    - name: lanzar role deploy 
-      include_role: 
-        name: contenedores 
+  - name: lanzar rol
+    include_role:
+      name: contenedores 
