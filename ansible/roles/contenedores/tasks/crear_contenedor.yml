@@ -1,0 +1,5 @@
+---
+- name: file3
+     file:
+      path: "pr3"
+      state:  directory

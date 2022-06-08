@@ -1,5 +1,7 @@
 ---
-- hosts: all  
+- hosts: all
+  become: yes  
   tasks:
     - name: lanzar role deploy 
-      include_role: "contenedores" 
+      include_role: 
+        name: "contenedores" 
