@@ -1,2 +1,3 @@
 ---
-- include_tasks: "crear_contenedor.yml"
+- name: Include task list in play
+      include_tasks: crear_contenedor.yml
