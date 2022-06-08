@@ -4,4 +4,4 @@
   tasks:
     - name: lanzar role deploy 
       include_role: 
-        name: "contenedores" 
+        name: ansible.contenedores 
