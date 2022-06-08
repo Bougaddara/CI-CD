@@ -1,8 +1,5 @@
 ---
 - hosts: all  
   tasks:
-   - name: crear file
-     file:
-      path: "pr2"
-      state:  directory
-     become: yes
+   - name: lanzar role deploy 
+      include_role: contenedores 

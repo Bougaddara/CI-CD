@@ -1,0 +1,8 @@
+---
+- hosts: all  
+  tasks:
+   - name: crear file 3
+     file:
+      path: "pr3"
+      state:  directory
+     become: yes# tasks file for roles/contenedores
