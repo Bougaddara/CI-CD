@@ -1,7 +1,7 @@
 ---
-- hosts: all
-  becom: yes 
+- hosts: all 
+  become: yes
   tasks:
-  - name: lanzar rol
+  - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
     include_role:
-      name: ansible.roles.contenedores 
+      name: myrole
