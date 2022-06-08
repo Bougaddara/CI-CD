@@ -1,7 +1,9 @@
 ---
 - hosts: all 
   become: yes
-  tasks:
-    - name: lanzar role de cont...
-      include_role:
-        name: contenedores
+  # tasks:
+  #   - name: lanzar role de cont...
+  #     include_role:
+  #       name: contenedores
+  roles:
+    - role: "roles/contenedores"
