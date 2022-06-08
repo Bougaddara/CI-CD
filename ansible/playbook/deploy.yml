@@ -1,6 +1,7 @@
 ---
 - hosts: all
+  becom: yes 
   tasks:
   - name: lanzar rol
     include_role:
-      name: contenedores 
+      name: ansible.roles.contenedores 
