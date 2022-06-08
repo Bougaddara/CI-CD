@@ -2,6 +2,6 @@
 - hosts: all 
   become: yes
   tasks:
-  - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
+  - name: lanzar role
     include_role:
-      name: myrole
+      name: 'contenedores'
