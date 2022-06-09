@@ -1,5 +1,5 @@
 ---
 - name: file4
-     file:
-      path: "pr4"
-      state:  directory
+  file:
+    path: "pr4"
+    state:  directory
