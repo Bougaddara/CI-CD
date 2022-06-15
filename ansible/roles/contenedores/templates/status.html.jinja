@@ -1,0 +1,16 @@
+{% extends "email.html.jinja" %}
+{% block status %} 
+    <td data-label="start date" >  {{ data['service'] }}</td>
+
+    <td  data-label="Batch status" > 
+     <span class="badge bg-success">{{result.url}}</span>
+    </td>
+
+    <td  data-label="Batch status" >
+      <span class="badge bg-success">{{result.date}}</span>
+    </td>
+
+    <td  data-label="Batch status" >
+      <span class="badge bg-success">{{status.msg}}</span>
+    </td>
+{% endblock %}

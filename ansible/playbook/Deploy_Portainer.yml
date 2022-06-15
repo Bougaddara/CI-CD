@@ -1,5 +1,7 @@
 ---
-- name: Deploy Portainer
+- hosts: servidores
+  tasks:
+  - name: Deploy Portainer
     docker_container:
       name: portainer
       image: portainer/portainer-ce

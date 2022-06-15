@@ -1,8 +1,8 @@
 ---
 - hosts: all  
+  become: yes
   tasks:
-   - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
+   - name: Crear premir 1
      file:
       path: "pr1"
       state:  directory
-     become: yes

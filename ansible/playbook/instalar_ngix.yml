@@ -1,0 +1,18 @@
+---
+- hosts: servidores 
+  become: yes
+  tasks:
+    - name: Install Nginx
+      apt: pkg=nginx state=installed update_cache=true
+      notify: Start Nginx
+
+    - name: Install Python 3
+      apt: pkg=python3-minimal state=installed
+ 
+
+  handlers: 
+    - name: Start Nginx
+      service: name=nginx state=started
+
+
+#  ansible-playbook -i hosts instalar_ngix.yml

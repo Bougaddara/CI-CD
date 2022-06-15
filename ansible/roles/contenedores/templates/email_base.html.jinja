@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title>state of sevices </title>
+
+        <style type="text/css">
+       
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #32312f;
+                font-size: sans-serif;
+
+            }
+            div {
+                padding: 0 1% ;
+                margin: 70px auto 0  ;
+            }
+            h1 {
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 40px;
+                color: #3c3f44;
+                
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table thead {
+                background-color:#FF1046 ;
+            }
+            table thead tr th  {
+                font-size:14px;
+                font-weight: 600 ;
+                letter-spacing: 0.35px ;
+                color: #ffffff;
+                opacity: 1;
+                padding: 12px ;
+                vertical-align: top;
+                border-bottom: 1px solid white;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 7px;
+
+            }
+            #status {
+                text-align: right;
+                padding-right: 25px ;
+            }
+
+            #service{
+                text-align: left;
+            }
+
+            table tbody tr td {
+                font-size: 14px;
+                letter-spacing: 0.35px;
+                font-weight: Nombre ;
+                color: #f1f1f1;
+                background-color: #3c3f44;
+                padding: 20px ;               
+                border-bottom: 1px solid white;
+
+            }
+          
+            span {
+                float: right;
+            }
+        </style>
+</head>
+<body>
+    <div clase="table-container">
+        <h1 clase="heading" > {{ data['title'] }} </h1>
+        <table clase="table">
+            <thead>
+                <tr>
+                    <th id="service" >SERVICE </th>
+                    <th id="status" >URL </th>
+                    <th id="status"> TIME </th>
+                    <th id="status"> STATUS </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                {% block status %}{% endblock %}
+                </tr> 
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
