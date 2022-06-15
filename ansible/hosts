@@ -12,10 +12,10 @@
 
 
 [servidores]
- 5.189.148.45 
-# 172.130.7.16
-# 172.130.7.14
-# 172.130.7.15 
+# 5.189.148.45 
+ 172.130.7.16
+ 172.130.7.14
+ 172.130.7.15 
 
 
 # Ex 2: A collection of hosts belonging to the 'webservers' group:
