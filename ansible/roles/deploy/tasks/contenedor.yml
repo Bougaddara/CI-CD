@@ -3,6 +3,7 @@
     name: portainer/portainer-ce
     state: present
 
+
 # - name: Deploy Portainer
 #     docker_container:
 #       name: portainer
