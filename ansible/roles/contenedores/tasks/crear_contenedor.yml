@@ -20,7 +20,7 @@
   notify: Start Nginx
 
 - name: Install Python 3
-  apt: pkg=python3-minimal state=installed
+  apt: pkg=python3-minimal state=present
  
 
 
