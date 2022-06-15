@@ -15,7 +15,7 @@
   apt: 
     pkg: 
       - nginx
-    state: installed
+    state: present 
     update_cache: true
   notify: Start Nginx
 
