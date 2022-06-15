@@ -1,16 +1,28 @@
 ---
-- name: Deploy Portainer
-    docker_container:
-      name: portainer
-      image: portainer/portainer-ce
-      ports:
-        - "9000:9000"
-        - "8000:8000"
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
-        - portainer_data:/data
-      restart_policy: always
+# - name: Deploy Portainer
+#     docker_container:
+#       name: portainer
+#       image: portainer/portainer-ce
+#       ports:
+#         - "9000:9000"
+#         - "8000:8000"
+#       volumes:
+#         - /var/run/docker.sock:/var/run/docker.sock
+#         - portainer_data:/data
+#       restart_policy: always
+
+  - name: Install Nginx
+        apt: pkg=nginx state=installed update_cache=true
+        notify: Start Nginx
+
+  - name: Install Python 3
+        apt: pkg=python3-minimal state=installed
+ 
+
+handlers: 
+    - name: Start Nginx
+      service: name=nginx state=started
 
 
-
+      
 # ansiblePlaybook becomeUser: 'mohamed', credentialsId: '5eeb5830-54b2-4065-bbae-a2df827b4535', disableHostKeyChecking: true, installation: 'ansible', inventory: 'ansible/hosts', playbook: 'ansible/playbook/deploy.yml'
