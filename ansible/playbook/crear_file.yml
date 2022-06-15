@@ -1,8 +1,7 @@
 ---
-- hosts: all  
-  become: yes
+- hosts: servidores  
   tasks:
    - name: Crear premir 1
      file:
-      path: "pr1"
+      path: "pr5"
       state:  directory
