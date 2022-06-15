@@ -1,6 +1,7 @@
 - name: pull an image
   docker_image:
     name: portainer/portainer-ce
+    state: present
 
 # - name: Deploy Portainer
 #     docker_container:
