@@ -12,7 +12,11 @@
 #       restart_policy: always
 
 - name: Install Nginx
-  apt: pkg=nginx state=installed update_cache=true
+  apt: 
+    pkg: 
+      - nginx
+    state: installed
+    update_cache: true
   notify: Start Nginx
 
 - name: Install Python 3
