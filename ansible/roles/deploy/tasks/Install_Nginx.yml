@@ -15,4 +15,4 @@
 
 
 
-# ansiblePlaybook becomeUser: 'mohamed', credentialsId: '5eeb5830-54b2-4065-bbae-a2df827b4535', disableHostKeyChecking: true, installation: 'ansible', inventory: 'ansible/hosts', playbook: 'ansible/playbook/deploy.yml'
+## ansiblePlaybook becomeUser: 'mohamed', credentialsId: '5eeb5830-54b2-4065-bbae-a2df827b4535', disableHostKeyChecking: true, installation: 'ansible', inventory: 'ansible/hosts', playbook: 'ansible/playbook/deploy.yml'
