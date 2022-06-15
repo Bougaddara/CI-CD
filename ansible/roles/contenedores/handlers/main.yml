@@ -1,2 +1,4 @@
 ---
 # handlers file for roles/contenedores
+- name: Start Nginx
+  service: name=nginx state=started
