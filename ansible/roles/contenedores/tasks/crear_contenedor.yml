@@ -19,7 +19,7 @@
   apt: pkg=python3-minimal state=installed
  
 
-handlers: 
+- handlers: 
     - name: Start Nginx
       service: name=nginx state=started
 
