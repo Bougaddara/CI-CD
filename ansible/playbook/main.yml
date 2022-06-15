@@ -1,2 +1,2 @@
 ---
-- import_playbook: "crear_file.yaml"
+- import_playbook: "crear_file.yml"
