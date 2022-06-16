@@ -1,7 +1,6 @@
 - name: pull an image
   docker_image:
     name: portainer/portainer-ce
-    state: present
     source: pull
 
 
