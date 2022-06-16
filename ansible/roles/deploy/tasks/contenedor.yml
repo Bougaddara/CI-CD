@@ -2,6 +2,7 @@
   docker_image:
     name: portainer/portainer-ce
     state: present
+    source: pull
 
 
 # - name: Deploy Portainer
