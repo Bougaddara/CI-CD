@@ -1,0 +1,9 @@
+- name: Stop contenedor 
+  docker_container:
+    name: portainer
+    state:   absent   # stopped   present  started
+
+
+- debug:
+    msg: "el contenedor esta eleminado"
+  

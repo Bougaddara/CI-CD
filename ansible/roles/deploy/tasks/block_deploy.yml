@@ -1,0 +1,12 @@
+---
+- name: "deploy portainer"
+  block:
+    - name: construir contenedor 
+      include_tasks: "contenedor.yml"
+
+    - name: combrobacion de sevicio  
+      include_tasks: "comprobacion_url.yml"
+  
+  rescue:
+    - name: elimenar contenedor  
+      include_tasks: "elimenar_contonedor.yml"
