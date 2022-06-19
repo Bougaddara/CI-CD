@@ -1,9 +1,9 @@
 ---
 # - include_tasks: "Install_Nginx.yml"
 
-# - include_tasks: "contenedor.yml"
+- include_tasks: "contenedor.yml"
 
-- include_tasks: "mg_contenedor.yml"
+# - include_tasks: "mg_contenedor.yml"
 
 
 
