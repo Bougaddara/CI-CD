@@ -1,13 +1,12 @@
 ---
 
-- include_tasks: "gs_contonedor.yml"
+# - include_tasks: "gs_contonedor.yml"
 
 
 # - include_tasks: "Install_Nginx.yml"
 
 # - include_tasks: "contenedor.yml"
 
-
-
+- include_tasks:  "block_deploy.yml"
 
 ###
