@@ -25,6 +25,6 @@
 - name: status Down
   debug:
     msg: "Down"
-  when: result.status == -1, 403, 503, 502
+  when: result.status == 403
 
 
