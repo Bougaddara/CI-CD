@@ -6,9 +6,9 @@
   register: result 
 
 
-- name: "debug resultado del chequeo"
-  debug: 
-    msg: "{{ result }}"
+# - name: "debug resultado del chequeo"
+#   debug: 
+#     msg: "{{ result }}"
 
 - set_fact:
     status_var: "{{result}}"
