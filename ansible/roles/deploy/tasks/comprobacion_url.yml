@@ -1,14 +1,14 @@
 ---
 - name: comprobar el url de portainer
   uri:
-    url: "{{ url_portainer }}"
+    url: http://5.189.148.45:8080/ #"{{ url_portainer }}"
     status: [ -1, 200, 403, 503, 502 ]
   register: result 
 
 
-# - name: "debug resultado del chequeo"
-#   debug: 
-#     msg: "{{ result }}"
+- name: "debug resultado del chequeo"
+  debug: 
+    msg: "{{ result }}"
 
 - set_fact:
     status_var: "{{result}}"
