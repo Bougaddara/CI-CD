@@ -5,6 +5,6 @@
     state:   absent   # stopped   present  started
 
 
-- debug:
-    msg: "el contenedor esta eleminado"
+# - debug:
+#     msg: "el contenedor esta eleminado"
   
