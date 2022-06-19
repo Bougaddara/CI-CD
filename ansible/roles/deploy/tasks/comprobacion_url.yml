@@ -7,7 +7,7 @@
 
 
 - name: "debug resultado del chequeo"
-  debuge: 
+  debug: 
     msg: "{{ result }}"
 
 - set_fact:
