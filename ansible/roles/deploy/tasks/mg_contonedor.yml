@@ -1,3 +1,4 @@
+---
 - name: Stop contenedor 
   docker_container:
     name: portainer
