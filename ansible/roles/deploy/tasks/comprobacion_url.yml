@@ -2,9 +2,9 @@
 - name: comprobar el url de portainer
   uri:
     url: "{{ url_portainer }}"
-    url_username: "{{ username }}"
-    url_password: "{{ password }}"
-    force_basic_auth: yes
+    # url_username: "{{ username }}"
+    # url_password: "{{ password }}"
+    # force_basic_auth: yes
     status_code: [ -1, 200, 403, 503, 502 ]
   register: result 
 
