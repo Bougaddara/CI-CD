@@ -5,7 +5,7 @@
     url_username: "{{ username }}"
     url_password: "{{ password }}"
     force_basic_auth: yes
-    status: [ -1, 200, 403, 503, 502 ]
+    status_code: [ -1, 200, 403, 503, 502 ]
   register: result 
 
 
