@@ -1,6 +1,9 @@
 ---
 - name: "deploy portainer"
   block:
+    - name: elimenar contenedor  
+      include_tasks: "elimenar_contonedor.yml"
+      
     - name: construir contenedor 
       include_tasks: "contenedor.yml"
 
