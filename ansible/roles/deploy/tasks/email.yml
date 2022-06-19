@@ -7,7 +7,7 @@
     subject: status of services
     subtype: html
     charser: utf8
-    body: "{{ lookup( 'template','template/status.html.jinja' )}}"
+    body: "{{ lookup( 'template','templates/status.html.jinja')}}"
   delegate_to: localhost
   register: mail
 
