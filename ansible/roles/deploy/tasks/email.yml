@@ -9,7 +9,7 @@
     charser: utf8
     body: "{{ lookup( 'template','template/status.html.jinja' )}}"
   delegate_to: localhost
-  registes: mail
+  register: mail
 
 - debug:
     msg: "{{ mail }}"
