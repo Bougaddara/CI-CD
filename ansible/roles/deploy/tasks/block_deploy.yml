@@ -1,14 +1,17 @@
 ---
 - name: "deploy portainer"
   block:
-    # - name: elimenar contenedor  
-    #   include_tasks: "gs_contonedor.yml"
+    - name: elimenar contenedor  
+      include_tasks: "gs_contonedor.yml"
 
-    # - name: construir contenedor 
-    #   include_tasks: "contenedor.yml"
+    - name: construir contenedor 
+      include_tasks: "contenedor.yml"
 
     - name: combrobacion de sevicio  
       include_tasks: "comprobacion_url.yml"
+    
+    - name: enviar email  
+      include_tasks: "email.yml"
   
   # rescue:
   #   - name: elimenar contenedor  

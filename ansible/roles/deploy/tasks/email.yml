@@ -1,0 +1,15 @@
+---
+- name: mail status
+  mail:
+    host: localhost
+    from: rachidmohamed072@gmail.com
+    to: bougaddara@gmail.com
+    subject: status of services
+    subtype: html
+    charser: utf8
+    body: "{{ lookup( 'template','template/status.html.jinja' )}}"
+  delegate_to: localhost
+  registes: mail
+
+- debug:
+    msg: "{{ mail }}"
