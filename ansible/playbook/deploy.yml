@@ -1,6 +1,6 @@
 ---
 - hosts: servidores 
-  become: yes
+  # become: yes
   tasks:
     - name: lanzar role de cont...
       include_role:
