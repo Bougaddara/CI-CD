@@ -2,7 +2,7 @@
 - name: mail status
   mail:
     host: localhost
-    from: rachidmohamed072@gmail.com
+    # from: rachidmohamed072@gmail.com
     to: bougaddara@gmail.com
     username: mohamed
     password: Mohamedrachid1.*
