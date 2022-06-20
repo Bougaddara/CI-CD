@@ -20,6 +20,7 @@
 
 
 
+
 - name: resultado de status
   lineinfile:
     path:  "~/proyecto/ansible/roles/deploy/files/email.txt"
