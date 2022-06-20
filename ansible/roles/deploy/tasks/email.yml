@@ -1,16 +1,14 @@
 ---
 - name: mail status
   mail:
-    host: servidores
+    host: localhost
     from: rachidmohamed072@gmail.com
     to: bougaddara@gmail.com
-    username: mohamed
-    password: Mohamedrachid1.*
     subject: status of services
     subtype: html
     charsert: utf8
     body: "{{ lookup( 'template', 'templates/status.html.jinja')}}"
-  delegate_to: servidores
+  delegate_to: localhost
   register: mail
 
 - debug:
