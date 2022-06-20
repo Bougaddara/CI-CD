@@ -1,18 +1,26 @@
 ---
-- name: mail status
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    # from: rachidmohamed072@gmail.com
-    to: bougaddara@gmail.com
-    username: bougaddara@gmail.com
-    password: 0668616234
-    subject: status of services
-    subtype: html
-    charsert: utf8
-    body: "{{ lookup( 'template', 'templates/status.html.jinja')}}"
-  # delegate_to: localhost
-  register: mail
+# - name: mail status
+#   mail:
+#     host: smtp.gmail.com
+#     port: 587
+#     # from: rachidmohamed072@gmail.com
+#     to: bougaddara@gmail.com
+#     username: bougaddara@gmail.com
+#     password: 0668616234
+#     subject: status of services
+#     subtype: html
+#     charsert: utf8
+#     body: "{{ lookup( 'template', 'templates/status.html.jinja')}}"
+#   # delegate_to: localhost
+#   register: mail
+
+# - debug:
+#     msg: "{{ mail }}"
+
+
+- name: email
+  shell: cat templates/status.html.jinja >> files/email.txt
+  register: info_st
 
 - debug:
-    msg: "{{ mail }}"
+    msg: "{{ info_st }}"
