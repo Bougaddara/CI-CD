@@ -1,7 +1,7 @@
 ---
 - name: mail status
   mail:
-    host: localhost
+    host: smtp.gmail.com
     # from: rachidmohamed072@gmail.com
     to: bougaddara@gmail.com
     username: bougaddara@gmail.com
@@ -10,7 +10,7 @@
     subtype: html
     charsert: utf8
     body: "{{ lookup( 'template', 'templates/status.html.jinja')}}"
-  delegate_to: localhost
+  # delegate_to: localhost
   register: mail
 
 - debug:
