@@ -12,5 +12,10 @@
  
 
 
-
+# local 
 # ansiblePlaybook credentialsId: '2a45446b-8dc7-47e1-b798-38ffea110132', disableHostKeyChecking: true, installation: 'ansible', inventory: 'ansible/hosts', playbook: 'ansible/playbook/deploy.yml'
+
+
+# sr
+
+# ansiblePlaybook credentialsId: 'servidores', disableHostKeyChecking: true, installation: 'ansible', inventory: 'ansible/hosts', playbook: 'ansible/playbook/main.yml'

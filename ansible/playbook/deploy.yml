@@ -1,6 +1,5 @@
 ---
 - hosts: servidores 
-
   # become: yes
   tasks:
     - name: lanzar role de cont...
