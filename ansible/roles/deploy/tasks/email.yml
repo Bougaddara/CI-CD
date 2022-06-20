@@ -19,7 +19,7 @@
 
 
 - name: email
-  shell: cat templates/status.html.jinja >> files/email.txt
+  shell: cat ~/proyecto/anisble/roles/templates/deploy/status.html.jinja >> files/email.txt
   register: info_st
 
 - debug:
