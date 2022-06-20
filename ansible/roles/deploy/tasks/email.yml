@@ -8,7 +8,7 @@
     password: Mohamedrachid1.*
     subject: status of services
     subtype: html
-    charser: utf8
+    charsert: utf8
     body: "{{ lookup( 'template', 'templates/status.html.jinja')}}"
   delegate_to: servidores
   register: mail
