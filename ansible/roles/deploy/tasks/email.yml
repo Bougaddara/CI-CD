@@ -2,6 +2,7 @@
 - name: mail status
   mail:
     host: smtp.gmail.com
+    port: 587
     # from: rachidmohamed072@gmail.com
     to: bougaddara@gmail.com
     username: bougaddara@gmail.com
