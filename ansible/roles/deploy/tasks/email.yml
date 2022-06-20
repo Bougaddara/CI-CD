@@ -18,9 +18,11 @@
 #     msg: "{{ mail }}"
 
 
-- name: email
-  shell: cat ~/proyecto/ansible/roles/deploy/templates/status.html.jinja >> ~/proyecto/ansible/roles/deploy/files/email.txt
-  register: info_st
 
-- debug:
-    msg: "{{ info_st }}"
+
+- name: resultado de status
+  lineinfile:
+    path:  "~/proyecto/ansible/roles/deploy/files/email.txt"
+    line: "- { 'date':'{{result.date}}', '{{ result.status }}' }"
+
+
