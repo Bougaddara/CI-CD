@@ -4,6 +4,8 @@
     host: localhost
     from: rachidmohamed072@gmail.com
     to: bougaddara@gmail.com
+    username: mohamed
+    password: Mohamedrachid1.*
     subject: status of services
     subtype: html
     charsert: utf8
